@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://rfikvuk0xy7t"]
+
+[ext_resource type="PackedScene" uid="uid://bphgpumkxhoy8" path="res://misc/skull.tscn" id="1_nav5e"]
+
+[node name="Skull" instance=ExtResource("1_nav5e")]
+scale = Vector2(2, 2)

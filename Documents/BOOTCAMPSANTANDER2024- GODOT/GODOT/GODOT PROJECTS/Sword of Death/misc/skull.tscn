@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://bphgpumkxhoy8"]
+
+[ext_resource type="Texture2D" uid="uid://b5fny2f3pe3fo" path="res://addons/Tiny Swords/Factions/Knights/Troops/Dead/Dead.png" id="1_wmagc"]
+
+[sub_resource type="Animation" id="Animation_hb10r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_bnukc"]
+resource_name = "default"
+length = 2.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.75, 0.85, 0.95, 1.05, 1.15, 1.25, 1.35, 1.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xxi8t"]
+_data = {
+"RESET": SubResource("Animation_hb10r"),
+"default": SubResource("Animation_bnukc")
+}
+
+[node name="Skull" type="Sprite2D"]
+texture = ExtResource("1_wmagc")
+offset = Vector2(0, -30)
+hframes = 7
+vframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xxi8t")
+}
+autoplay = "default"

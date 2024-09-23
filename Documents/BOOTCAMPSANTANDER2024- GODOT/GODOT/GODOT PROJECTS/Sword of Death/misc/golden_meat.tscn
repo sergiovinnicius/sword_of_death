@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8cekcreu0yoy"]
+
+[ext_resource type="PackedScene" uid="uid://ci4l43tnbkv8i" path="res://misc/Meat.tscn" id="1_casq3"]
+
+[node name="Meat" instance=ExtResource("1_casq3")]
+self_modulate = Color(1.14, 1.131, 0, 1)
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+visible = false

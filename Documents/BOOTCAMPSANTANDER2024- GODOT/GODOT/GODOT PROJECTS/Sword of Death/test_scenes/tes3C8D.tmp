@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://bscbb0hbhylkl"]
+
+[ext_resource type="PackedScene" uid="uid://biif2vc7isg6q" path="res://player/player.tscn" id="2_bfoac"]
+[ext_resource type="PackedScene" uid="uid://by6s48qwfmmqr" path="res://enemies/Pawn.tscn" id="3_qmfgs"]
+
+[node name="TestePlayer" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_bfoac")]
+position = Vector2(111, 170)
+speed = 3.0
+
+[node name="Pawn" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(584, 936)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(980, 971)
+
+[node name="Pawn3" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(653, 751)
+
+[node name="Pawn4" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(420, 927)
+
+[node name="Pawn5" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(1314, 977)
+
+[node name="Pawn6" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(1342, 448)
+
+[node name="Pawn7" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(1135, 572)
+
+[node name="Pawn8" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(566, 830)
+
+[node name="Pawn9" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(1208, 746)
+
+[node name="Pawn10" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(1000, 738)
+
+[node name="Pawn11" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(876, 727)
+
+[node name="Pawn12" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(1302, 597)
+
+[node name="Pawn13" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(811, 917)
+
+[node name="Pawn14" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(1082, 840)
+
+[node name="Pawn15" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(1254, 826)
+
+[node name="Pawn16" parent="." instance=ExtResource("3_qmfgs")]
+position = Vector2(570, 584)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+offset_left = -480.0
+offset_top = -265.0
+offset_right = 1489.0
+offset_bottom = 1021.0
+color = Color(0.176471, 1, 1, 1)

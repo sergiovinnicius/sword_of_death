@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=3 uid="uid://ccgt4lchl8u1y"]
+
+[ext_resource type="PackedScene" uid="uid://biif2vc7isg6q" path="res://player/player.tscn" id="1_xiaml"]
+[ext_resource type="PackedScene" uid="uid://caj6b7yqkrutm" path="res://ui/game_ui.tscn" id="2_4pmpd"]
+[ext_resource type="PackedScene" uid="uid://ccxgw1vxfihnm" path="res://enemies/Goblin.tscn" id="3_1puyc"]
+[ext_resource type="PackedScene" uid="uid://by6s48qwfmmqr" path="res://enemies/Pawn.tscn" id="4_7ne55"]
+[ext_resource type="PackedScene" uid="uid://bue75sve0hkic" path="res://enemies/Sheep.tscn" id="5_swmyt"]
+[ext_resource type="PackedScene" uid="uid://ci4l43tnbkv8i" path="res://misc/Meat.tscn" id="6_yx4p4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_xiaml")]
+position = Vector2(276, 193)
+
+[node name="GameUi" parent="." instance=ExtResource("2_4pmpd")]
+
+[node name="Goblin" parent="." instance=ExtResource("3_1puyc")]
+position = Vector2(1119, 404)
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Pawn" parent="." instance=ExtResource("4_7ne55")]
+position = Vector2(758, 458)
+health = 10
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Sheep" parent="." instance=ExtResource("5_swmyt")]
+position = Vector2(586, 516)
+health = 10
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Sheep2" parent="." instance=ExtResource("5_swmyt")]
+position = Vector2(639, 404)
+health = 10
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Meat" parent="." instance=ExtResource("6_yx4p4")]
+position = Vector2(114, 504)
+
+[node name="Meat2" parent="." instance=ExtResource("6_yx4p4")]
+position = Vector2(901, 530)
+
+[node name="Meat3" parent="." instance=ExtResource("6_yx4p4")]
+position = Vector2(1358, 494)
+
+[node name="Meat4" parent="." instance=ExtResource("6_yx4p4")]
+position = Vector2(1323, 247)
+
+[node name="Pawn2" parent="." instance=ExtResource("4_7ne55")]
+position = Vector2(533, 451)
+health = 10
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Sheep3" parent="." instance=ExtResource("5_swmyt")]
+position = Vector2(642, 355)
+health = 10
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Sheep4" parent="." instance=ExtResource("5_swmyt")]
+position = Vector2(439, 661)
+health = 10
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Sheep5" parent="." instance=ExtResource("5_swmyt")]
+position = Vector2(1581, 527)
+health = 10
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Goblin2" parent="." instance=ExtResource("3_1puyc")]
+position = Vector2(1206, 609)
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Goblin3" parent="." instance=ExtResource("3_1puyc")]
+position = Vector2(1024, 239)
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Goblin4" parent="." instance=ExtResource("3_1puyc")]
+position = Vector2(219, 355)
+death_prefab = null
+drop_items = Array[PackedScene]([])
+
+[node name="Pawn3" parent="." instance=ExtResource("4_7ne55")]
+position = Vector2(244, 607)
+health = 10
+death_prefab = null
+drop_items = Array[PackedScene]([])
